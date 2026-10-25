@@ -1,0 +1,813 @@
+/*  GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/*  TOP BAR */
+
+.top-bar {
+    background-color: #d94f61;
+    color: white;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+
+    background-color: white;
+    color: #111;
+
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.social-icon:hover {
+    color: #d94f61;
+}
+
+.top-bar span {
+    font-size: 14px;
+}
+
+
+/*  NAVBAR */
+
+.navbar {
+    min-height: 65px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    width: 95px;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #d94f61 !important;
+}
+
+
+/*  SEARCH */
+
+.search-box {
+    width: 230px;
+    height: 40px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    padding: 0 10px;
+
+    color: #777;
+}
+
+.search-box input {
+    padding-left: 0;
+}
+
+.search-box input:focus {
+    box-shadow: none;
+}
+
+
+/*  DOWNLOAD BUTTON */
+
+.download-btn {
+    height: 40px;
+    color: white;
+
+    border: none;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+/*  PAGE BAR */
+
+.page-bar {
+    background-color: white;
+
+    min-height: 75px;
+}
+
+.page-bar h5 {
+    color: #555;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/*  CREATE ACCOUNT */
+
+.create-btn {
+    
+
+    color: white;
+
+    padding: 10px 22px;
+}
+
+
+
+/*  LOGIN */
+
+.login-btn {
+    background-color: white;
+
+    color: #999;
+
+    border: 1px solid #bbb;
+
+    padding: 10px 20px;
+}
+
+
+
+
+/*  HERO  */
+
+.hero {
+    height: 570px;
+
+
+    background-image: url("../img/back-header-back.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/*  HERO CONTENT  */
+
+.hero-content h1 {
+    font-size: 40px;
+
+    font-weight: 400;
+}
+
+.hero-content p {
+    font-size: 17px;
+
+    line-height: 2;
+
+    max-width: 650px;
+}
+
+
+
+.get-started-btn {
+  
+    color: white;
+
+    border: none;
+
+    padding: 14px 22px;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+    .search-box {
+        width: 100%;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+}
+
+/*  CATEGORIES */
+
+.category-card {
+    height: 210px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.category-card img {
+    object-fit: cover;
+}
+
+.category-name {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: rgba(181, 125, 99, 0.75);
+
+    color: white;
+
+    font-size: 17px;
+
+    padding: 9px;
+
+    border-radius: 15px;
+}
+
+
+/*  SECTION TITLE */
+
+.section-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #111;
+}
+
+
+/*  SEE ALL */
+
+.see-all {
+    color: #4778e8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.see-all:hover {
+    color: #d94f61;
+}
+
+
+/*  PROVIDERS */
+
+.provider-card {
+    height: 210px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.provider-card img {
+    object-fit: cover;
+}
+
+
+/* Provider Name */
+
+.provider-name {
+    position: absolute;
+
+    bottom: 10px;
+    left: 5%;
+
+    width: 90%;
+
+    background-color: #eeeeee;
+
+    color: #000;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 8px;
+
+    border-radius: 15px;
+}
+
+
+/*  SERVICES */
+
+.service-card {
+    height: 210px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.service-card img {
+    object-fit: cover;
+}
+
+
+/* Service Name */
+
+.service-name {
+    position: absolute;
+
+    bottom: 10px;
+    left: 5%;
+
+    width: 90%;
+
+    background-color: rgba(181, 125, 99, 0.8);
+
+    color: white;
+
+    font-size: 16px;
+
+    padding: 8px;
+
+    border-radius: 15px;
+}
+
+
+/*  RESPONSIVE */
+
+@media (max-width: 767px) {
+
+    .category-card,
+    .provider-card,
+    .service-card {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .see-all {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==================================================
+   OUR SERVICES
+================================ */
+
+.service-box {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.service-img {
+    height: 170px;
+    overflow: hidden;
+}
+
+.service-img img {
+    object-fit: cover;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #777;
+}
+
+.discount {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+
+    background-color: #e0f3e9;
+    color: #6b9b85;
+
+    padding: 4px 7px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.service-category {
+    color: #999;
+    font-size: 14px;
+}
+
+.rating {
+    color: #e5aa00;
+    font-size: 20px;
+}
+
+.rating span {
+    color: #6586d9;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.view-btn {
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #aaa;
+}
+
+.view-btn:hover {
+    background-color: #d94f61;
+    color: white;
+}
+
+
+/* ==================================================
+   JOIN PROVIDERS
+================================ */
+
+.join-providers {
+    margin-top: 40px;
+}
+
+.join-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+}
+
+.join-text {
+    max-width: 290px;
+    color: 
+RGB(79, 79, 79);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.join-btn {
+    width: 180px;
+padding: 12px 0 ;
+}
+
+
+
+
+/* Join Cards */
+
+.join-card {
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.join-card img {
+    object-fit: cover;
+}
+
+.join-card-name {
+    position: absolute;
+
+    bottom: 5px;
+    left: 8%;
+
+    width: 84%;
+
+    padding: 7px;
+
+    background-color: #eee;
+
+    color: #000;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* 
+   NEWSLETTER
+ */
+
+.newsletter {
+    margin-top: 40px;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.newsletter-text {
+    color: #999;
+    font-size: 15px;
+}
+
+.newsletter-input {
+    background-color: #e9f7ed;
+    border: none;
+    font-size: 14px;
+}
+
+.newsletter-input:focus {
+    background-color: #e9f7ed;
+    box-shadow: none;
+}
+
+
+/* 
+   DOWNLOAD APP
+ */
+
+.download-app {
+    min-height: 380px;
+
+   
+
+    background-image:
+        linear-gradient(
+            rgba(0, 67, 75, 0.78),
+            rgba(0, 67, 75, 0.78)
+        ),
+        url("../img/Rectangle\ 19.png");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 7px;
+
+    padding: 40px;
+}
+
+.download-content {
+    max-width: 420px;
+}
+
+.download-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.download-content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.app-btn {
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 4px;
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+}
+
+.android-btn {
+     background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 4px;
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+}
+
+.app-btn:hover{
+  background-color: 
+RGB(215, 215, 189);
+}
+.android-btn:hover{
+background-color: 
+RGB(215, 215, 189);
+
+}
+
+
+/* 
+   ABOUT HENNA
+*/
+
+.about-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-box {
+    min-height: 190px;
+
+    padding: 25px;
+
+    color: white;
+
+    border-radius: 12px;
+}
+
+.about-box h3 {
+    font-size:30px;
+    font-weight: 400;
+}
+
+.about-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.objective-box {
+    background: linear-gradient(135deg, #ec6760, #ff8068);
+}
+
+.vision-box {
+    background: linear-gradient(135deg, #2c7c80, #58d4d2);
+}
+
+.mission-box {
+    background: linear-gradient(135deg, #e75e5d, #ff8068);
+}
+
+
+/* 
+   FOOTER
+ */
+
+.footer {
+    background-color: white;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer-text {
+    max-width: 450px;
+
+    color: 
+RGB(79, 79, 79);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.footer h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #d94f61;
+}
+
+.contact-circle {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: #fff5df;
+    color: #d94f61;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer small {
+    color: #777;
+    font-size: 16px;
+}
+
+.footer-email {
+    color: #d94f61;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 11px;
+}
+
+
+/* 
+   BACK TO TOP
+ */
+
+.back-top {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background-color: #d94f61;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    z-index: 1000;
+}
+
+.back-top:hover {
+    color: white;
+    background-color: #c64254;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .join-title {
+        font-size: 26px;
+    }
+
+    .join-text {
+        max-width: 100%;
+    }
+
+    .download-app {
+        min-height: 300px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .service-img {
+        height: 220px;
+    }
+
+    .join-card {
+        height: 220px;
+    }
+
+    .download-app {
+        padding: 25px;
+    }
+
+    .download-content h2 {
+        font-size: 25px;
+    }
+
+}
